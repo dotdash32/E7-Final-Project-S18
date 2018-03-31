@@ -1,0 +1,16 @@
+ID;Category;StrategyName;Sector;Description;Needs;Challenges;Cost
+1;Efficiency and Conservation;Transport Efficiency;Transportation;Increase automobile efficiency (2 billion cars projected in 2050);Double efficiency of all cars from 30 mpg to 60 mpg; Car size and power;1
+2;Efficiency and Conservation;Transport Conservation;Transportation;Reduce miles traveled by passenger and/or freight vehicles;Cut miles traveled by all passenger vehicles in half;Increased public transport and urban design;1
+3;Efficiency and Conservation;Building Efficiency;Electricity,Fuel;Increase insulation, furnace and lighting efficiency;Use best available technology in all new and existing buildings;House size, consumer demand for appliances;1
+4;Efficiency and Conservation;Electrical Efficiency;Electricity;Increase efficiency of power generation;Raise power plant efficiency from 40% to 60%;Increased plant costs;1
+5;Fossil Fuel;CCS Electricity;Electricity;90% of CO2 from fossil fuel power plants captured then stored underground;Inject a volume of CO2 every year equal to the volume of oil extracted;Possible leakage;2
+6;Fossil Fuel;CCS Hydrogen;Transportation,Fuel;Hydrogen fuel from fossile sources with CCS displaces hydrocarbon fuels;Produce hydrogen at 10 times the current rate;New infrastructure needed, hydrogen safety issues;3
+7;Fossil Fuel;CCS Synfuels;Transportation,Fuel;Capture and store CO2 emitted during synfuels production from coal;Use CCS at 180 large synfuels plants;Emissions still only break even with gasoline;2
+8;Fossil Fuel;Fuel Switching;Electricity;Replace coal-burning electric plants with natural gas plants;Use an amount of natural gas equal to that used for all purposes today;Natural gas availability;1
+9;Nuclear;Nuclear Electricity;Electricity;Displace coal-burning electric plants with nuclear plants;About 3 times the effort France put into expanding nuclear power in the 1980s sustained for 50 years;Weapons proliferation, nuclear waste, local opposition;2
+10;Renewables and Biostorage;Wind Electricity;Electricity;Wind displaces coal-based electricity;Use area equal to about 3% of US land area for wind farms;Local opposition;2
+11;Renewables and Biostorage;Solar Electricity;Electricity;Solar PV displaces coal-based electricity;Use the equivalent of a 100x200 km PV array;PV cell materials;3
+12;Renewables and Biostorage;Wind Hydrogen;Transportation,Fuel;Produce hydrogen with wind electricity;Power half the world's cars predicted for 2050 with hydrogen;Local opposition, Hydrogen infrastructure, safety;3
+13;Renewables and Biostorage;Biofuels;Transportation,Fuel;Biomass fuels from plantations replace petroleum fuels;Scale up world ethanol production by a factor of 12;Biodiversity, competing land use;2
+14;Renewables and Biostorage;Forest Storage;Biostorage;Carbon stored in new forests;Halt deforestation in 50 years;Biodiversity, competing land use;1
+15;Renewables and Biostorage;Soil Storage;Biostorage;Farming techniques increase carbon retention or storage in soils;Practice carbon management on all the world's agricultural soils;Reversed if land is deep-plowed later;1
