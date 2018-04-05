@@ -23,3 +23,5 @@ TODO: offer way to change text file (ie delete the struct and allow it to be ree
 Data can also be entered into tables for Wedges and Constraints.  Strategy updates will be done live within the app to show changes, so this table is omitted for now.
 
 TODO: make tables with input.  Allow tables to read file and display it in a more readable form.  Allow changes to file from table, additions/subtractions.  Delete/add rows?
+
+This is fun!
