@@ -12,27 +12,20 @@ Below is the rough draft/live draft of the write up with features of the app as 
 
 Fundamentally, data can be fed in through two methods.  Through text files in the format specified in the assignment PDF, or through tables.
 
-You can only input .txt files with the correct format. For example, one cannot submit constraint.txt into the wedges option, and one cannot 
-submit the wedges.txt into the constraint option. This will bring upon an error.
+You can only input .txt files with the correct format. For example, one cannot submit constraint.txt into the wedges option, and one cannot submit the wedges.txt into the constraint option. This will bring upon an error.
 
 ### Text Files
 
 Text files can be given as an input to the app, in the order of Wedges, Constraints, Strategy.  We use varargin so that any number of files can be given as an input.  The other files can be given through the GUI.  A text input field appears for each file, with an indicator of whether or not it has been entered into the program.  When a file is entered, the field will grey out.  A `Browse...` Button appears to allow a user to navigate to the relavent file.  If a file or file location entered is invalid, an error message will display at the bottom of the screen.
 
-TODO: offer way to change text file (ie delete the struct and allow it to be reentered).  Error message changes text color, flash indicator?  When text changed, revert color to black.
-
-TODO Error checking: try catch/ if statements for fid = -1, header correct, each line has same # of values as header (8)
-
-`app.ErrorText.Value = sprintf(app.fileError, 'Constraints');
- app.ConstraintsTextFile.FontColor = 'red';
- app.ErrorText.FontColor = 'red';`
 
 ### Tables
 
-Data can also be entered into tables for Wedges and Constraints.  Strategy updates will be done live within the app to show changes, so this table is omitted for now.
-Although Strategy updates will also be done live within the app, it is setup now to just read the information from the file and put it in table.
+Data can also be entered into tables for Wedges, Constraints, and Strategy.  These tables can have basic operations done on them.  Pre-loaded files can be edited.  When a cell is selected, a row can be added above or below, or the row can be deleted.  After the operation is completed, the add above and delete row buttons are unenabled, since MATLAB only store the indices selected when a selection event happens, and if the selection is out of bounds, it will cause an error.  
 
-TODO: make tables with input.  Allow tables to read file and display it in a more readable form.  Allow changes to file from table, additions/subtractions.  Delete/add rows?
+As soon as any edit is done to a table, the data will be pushed back into the struct for that segment of data.  The file name in the `File` tab will be updated as `From Table`.
+
+TODO: ??Although Strategy updates will also be done live within the app, it is setup now to just read the information from the file and put it in table.
 
 
 ### Data Structures
@@ -83,3 +76,15 @@ YearStart
 
 in accordance with the header of `strategy.txt`.  Each wedge has it's ID within the `ID` field, but the ID is not tied to the index of the wedge within the struct.  The wedges are in order of input.  
 
+
+## Output
+
+All file saving dialogs open a window to choose the location and name of the file.  The default setting is txt.
+
+### Save to File
+
+Each section; Wedges, Constraints, and Strategy; have their own `Save to File` button.  This allows the data inputed into the table to be saved to a file in the same format as the given files.  This feature is useful to make small changes to these files in a grpahic setting.
+
+### Output File
+
+Data summarizing the wedges choosen can be viewed in a table, and then saved to a file.  This table is not editable, as all of it's information is drawn from other tables, namely Wedges and Strategy.
