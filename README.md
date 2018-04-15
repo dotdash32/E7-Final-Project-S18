@@ -25,6 +25,8 @@ Data can also be entered into tables for Wedges, Constraints, and Strategy.  The
 
 As soon as any edit is done to a table, the data will be pushed back into the struct for that segment of data.  The file name in the `File` tab will be updated as `From Table`.
 
+Another table has been inputted for Historical Data. This data is stored in a matrix as app.historical, and can be used in graphing later...
+
 TODO: ??Although Strategy updates will also be done live within the app, it is setup now to just read the information from the file and put it in table.
 
 
