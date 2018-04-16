@@ -25,7 +25,7 @@ Data can also be entered into tables for Wedges, Constraints, and Strategy.  The
 
 As soon as any edit is done to a table, the data will be pushed back into the struct for that segment of data.  The file name in the `File` tab will be updated as `From Table`.
 
-Another table has been inputted for Historical Data. This data is stored in a matrix as app.historical, and can be used in graphing later...
+Data is automatically stored into Historical Data table when app loads in.
 
 TODO: ??Although Strategy updates will also be done live within the app, it is setup now to just read the information from the file and put it in table.
 
@@ -37,6 +37,11 @@ The data read from files is read into three structs.  While similar, the structs
 #### Wedges
 
 The wedges are stored into a 1xP struct with fields 
+
+### Graphs
+
+Historical Data is plotted on the Emissions Graph, with a line of Best Fit representing it (and the "no-action" continuing line that goes past 
+2017). Also, the flat-line is plotted. 
 
 ```MATLAB
 
