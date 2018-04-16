@@ -25,7 +25,14 @@ ylabel('fossil fuel and industry GtC/yr'); %label of struct array
 xlim([syr (eyr+50)]);
 
 %estimate business as usual **doubles every 50 years
-
+business = zeros(50,2);
+for n = 1:50
+    business(n,1) = eyr+n;
+    business(n,2) = text(eindex+n-51,2) * 2;
 end
+business
+plot( business(:, 1), business(:,2) );
+end
+
 
     
