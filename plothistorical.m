@@ -1,4 +1,4 @@
-function [fig] = plothistorical(historical, syr, eyr)
+function [fig, business] = plothistorical(historical, syr, eyr)
 %text is historical.txt in a struct array?
 
 %text = cell2mat(struct2cell(historical);
