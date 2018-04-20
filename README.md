@@ -40,8 +40,12 @@ The wedges are stored into a 1xP struct with fields
 
 ### Graphs
 
-Historical Data is plotted on the Emissions Graph, with a line of Best Fit representing it (and the "no-action" continuing line that goes past 
-2017). Also, the flat-line is plotted. 
+Historical Data is plotted on the Emissions Graph, with the predictive line and flat line both coded in. 
+
+Now, numbers of wedges can be selected in the "select wedges" tab and it will take the start years from 'strat.txt' and plot the wedges from 
+then on. No color coding has been done as of yet. 
+
+
 
 ```MATLAB
 
