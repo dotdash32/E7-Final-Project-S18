@@ -12,6 +12,8 @@ Below is the rough draft/live draft of the write up with features of the app as 
 
 Fundamentally, data can be fed in through two methods.  Through text files in the format specified in the assignment PDF, or through tables.
 
+Strategy Table can be edited by user.
+
 You can only input .txt files with the correct format. For example, one cannot submit constraint.txt into the wedges option, and one cannot submit the wedges.txt into the constraint option. This will bring upon an error.
 
 ### Text Files
@@ -38,12 +40,13 @@ The data read from files is read into three structs.  While similar, the structs
 
 The wedges are stored into a 1xP struct with fields 
 
+Wedges are now plotted exponentially on the emissions graph.
+
 ### Graphs
 
 Historical Data is plotted on the Emissions Graph, with the predictive line and flat line both coded in. 
 
-Now, numbers of wedges can be selected in the "select wedges" tab and it will take the start years from 'strat.txt' and plot the wedges from 
-then on. No color coding has been done as of yet. 
+Wedges can be specified on Strategy table and will be plotted on emissions graph.
 
 
 
