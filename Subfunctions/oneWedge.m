@@ -18,8 +18,8 @@ function [newFunc] = oneWedge(func,startYear,color)
         c = A\b; %lin reg
         newFunc = @(t) boundar(2,1)*exp(c(2)*(t-startYear)); %define
     else % below or flatline, so gotta be straight
-        newFunc = @(t) ((boundar(2,2)-boundar(2,1))/50)*(t - startYear)...
-            + boundar(2,1); %define linear function
+        newFunc = @(t) (((boundar(2,2)-1)-boundar(2,1))/50)*(t- ...
+            startYear)+ boundar(2,1); %define linear function
     end %if statement
     x = startYear:endYear; %what are the x vals to check?
     xRev = endYear:-1:startYear; %go in reverse
