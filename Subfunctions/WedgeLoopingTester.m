@@ -6,7 +6,7 @@
 
 %% Define stuff
 
-numWedges = 20; %how many iterations
+numWedges = 15; %how many iterations
 startYear = 2018; %when to start
 
 yearbounds = [2018 2068];
